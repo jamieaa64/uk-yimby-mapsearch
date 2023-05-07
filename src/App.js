@@ -33,18 +33,18 @@ function App() {
     }
   };
 
-	return (
-	  <div className="App">
-		<header className="App-header">
-		  <h1>YIMBY Planning Applications</h1>
-		</header>
-		<SearchForm onSearch={handleSearch} />
-		<div className="map-container">
-		  <Map coordinates={coordinates} />
-		</div>
-		<PlanningApplicationDetails application={selectedApplication} />
-	  </div>
-	);
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>YIMBY Planning Applications</h1>
+        </header>
+        <SearchForm onSearch={handleSearch} />
+        <div className="map-container">
+          <Map coordinates={coordinates} />
+        </div>
+        <PlanningApplicationDetails application={selectedApplication} />
+      </div>
+    );
 }
 
 export default App;
